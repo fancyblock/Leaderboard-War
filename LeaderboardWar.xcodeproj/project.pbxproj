@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF51C8F1155CEA6600F82AC6 /* BoardCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF51C8F0155CEA6600F82AC6 /* BoardCellView.xib */; };
+		CF51C91A155CEC7F00F82AC6 /* BoardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51C919155CEC7F00F82AC6 /* BoardCellView.m */; };
+		CF51C946155CF9C000F82AC6 /* CoreGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51C945155CF9C000F82AC6 /* CoreGame.m */; };
+		CF8477CC155BFC4700B2F1CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CB155BFC4700B2F1CF /* UIKit.framework */; };
+		CF8477CE155BFC4700B2F1CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CD155BFC4700B2F1CF /* Foundation.framework */; };
+		CF8477D0155BFC4700B2F1CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CF155BFC4700B2F1CF /* CoreGraphics.framework */; };
+		CF8477D6155BFC4700B2F1CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF8477D4155BFC4700B2F1CF /* InfoPlist.strings */; };
+		CF8477D8155BFC4700B2F1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8477D7155BFC4700B2F1CF /* main.m */; };
+		CF8477DC155BFC4700B2F1CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8477DB155BFC4700B2F1CF /* AppDelegate.m */; };
+		CF8477DF155BFC4700B2F1CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8477DE155BFC4700B2F1CF /* ViewController.m */; };
+		CF8477E2155BFC4700B2F1CF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF8477E0155BFC4700B2F1CF /* ViewController.xib */; };
+		CF8477E9155C037100B2F1CF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477E8155C037100B2F1CF /* Parse.framework */; };
+		CF8477EB155C09B500B2F1CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477EA155C09B500B2F1CF /* AudioToolbox.framework */; };
+		CF8477ED155C09C000B2F1CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477EC155C09C000B2F1CF /* CFNetwork.framework */; };
+		CF8477EF155C09CD00B2F1CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477EE155C09CD00B2F1CF /* SystemConfiguration.framework */; };
+		CF8477F1155C09E600B2F1CF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477F0155C09E600B2F1CF /* MobileCoreServices.framework */; };
+		CF8477F3155C0A0900B2F1CF /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477F2155C0A0900B2F1CF /* libz.1.1.3.dylib */; };
+		CF8477F5155C0A1400B2F1CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477F4155C0A1400B2F1CF /* Security.framework */; };
+		CF8477F7155C0A1D00B2F1CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477F6155C0A1D00B2F1CF /* QuartzCore.framework */; };
+		CF847808155C1CFD00B2F1CF /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF8477FB155C1CFD00B2F1CF /* FBDialog.bundle */; };
+		CF847809155C1CFD00B2F1CF /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF847801155C1CFD00B2F1CF /* libfacebook_ios_sdk.a */; };
+		CF847812155C2BC900B2F1CF /* FacebookData.m in Sources */ = {isa = PBXBuildFile; fileRef = CF84780F155C2BC900B2F1CF /* FacebookData.m */; };
+		CF847813155C2BC900B2F1CF /* FacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF847811155C2BC900B2F1CF /* FacebookManager.m */; };
+		CF847817155C328B00B2F1CF /* LeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF847815155C328B00B2F1CF /* LeaderboardViewController.m */; };
+		CF847818155C328B00B2F1CF /* LeaderboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF847816155C328B00B2F1CF /* LeaderboardViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF51C8F0155CEA6600F82AC6 /* BoardCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardCellView.xib; sourceTree = "<group>"; };
+		CF51C918155CEC7F00F82AC6 /* BoardCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardCellView.h; sourceTree = "<group>"; };
+		CF51C919155CEC7F00F82AC6 /* BoardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardCellView.m; sourceTree = "<group>"; };
+		CF51C944155CF9C000F82AC6 /* CoreGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGame.h; sourceTree = "<group>"; };
+		CF51C945155CF9C000F82AC6 /* CoreGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGame.m; sourceTree = "<group>"; };
+		CF8477C7155BFC4700B2F1CF /* LeaderboardWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8477CB155BFC4700B2F1CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF8477CD155BFC4700B2F1CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF8477CF155BFC4700B2F1CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF8477D3155BFC4700B2F1CF /* LeaderboardWar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeaderboardWar-Info.plist"; sourceTree = "<group>"; };
+		CF8477D5155BFC4700B2F1CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF8477D7155BFC4700B2F1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF8477D9155BFC4700B2F1CF /* LeaderboardWar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeaderboardWar-Prefix.pch"; sourceTree = "<group>"; };
+		CF8477DA155BFC4700B2F1CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF8477DB155BFC4700B2F1CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF8477DD155BFC4700B2F1CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF8477DE155BFC4700B2F1CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF8477E1155BFC4700B2F1CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CF8477E8155C037100B2F1CF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CF8477EA155C09B500B2F1CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CF8477EC155C09C000B2F1CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CF8477EE155C09CD00B2F1CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF8477F0155C09E600B2F1CF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CF8477F2155C0A0900B2F1CF /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		CF8477F4155C0A1400B2F1CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CF8477F6155C0A1D00B2F1CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF8477F9155C1CFD00B2F1CF /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		CF8477FA155C1CFD00B2F1CF /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		CF8477FB155C1CFD00B2F1CF /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		CF8477FC155C1CFD00B2F1CF /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		CF8477FD155C1CFD00B2F1CF /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		CF8477FE155C1CFD00B2F1CF /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		CF8477FF155C1CFD00B2F1CF /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		CF847800155C1CFD00B2F1CF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		CF847801155C1CFD00B2F1CF /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfacebook_ios_sdk.a; path = "facebook-ios-sdk/libfacebook_ios_sdk.a"; sourceTree = "<group>"; };
+		CF847802155C1CFD00B2F1CF /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		CF847803155C1CFD00B2F1CF /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		CF847804155C1CFD00B2F1CF /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		CF847805155C1CFD00B2F1CF /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		CF847806155C1CFD00B2F1CF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		CF847807155C1CFD00B2F1CF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		CF84780E155C2BC900B2F1CF /* FacebookData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookData.h; sourceTree = "<group>"; };
+		CF84780F155C2BC900B2F1CF /* FacebookData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookData.m; sourceTree = "<group>"; };
+		CF847810155C2BC900B2F1CF /* FacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookManager.h; sourceTree = "<group>"; };
+		CF847811155C2BC900B2F1CF /* FacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookManager.m; sourceTree = "<group>"; };
+		CF847814155C328A00B2F1CF /* LeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardViewController.h; sourceTree = "<group>"; };
+		CF847815155C328B00B2F1CF /* LeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardViewController.m; sourceTree = "<group>"; };
+		CF847816155C328B00B2F1CF /* LeaderboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF8477C4155BFC4700B2F1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8477F7155C0A1D00B2F1CF /* QuartzCore.framework in Frameworks */,
+				CF8477F5155C0A1400B2F1CF /* Security.framework in Frameworks */,
+				CF8477F3155C0A0900B2F1CF /* libz.1.1.3.dylib in Frameworks */,
+				CF8477D0155BFC4700B2F1CF /* CoreGraphics.framework in Frameworks */,
+				CF8477F1155C09E600B2F1CF /* MobileCoreServices.framework in Frameworks */,
+				CF8477EF155C09CD00B2F1CF /* SystemConfiguration.framework in Frameworks */,
+				CF8477ED155C09C000B2F1CF /* CFNetwork.framework in Frameworks */,
+				CF8477EB155C09B500B2F1CF /* AudioToolbox.framework in Frameworks */,
+				CF8477CC155BFC4700B2F1CF /* UIKit.framework in Frameworks */,
+				CF8477CE155BFC4700B2F1CF /* Foundation.framework in Frameworks */,
+				CF8477E9155C037100B2F1CF /* Parse.framework in Frameworks */,
+				CF847809155C1CFD00B2F1CF /* libfacebook_ios_sdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF8477BC155BFC4600B2F1CF = {
+			isa = PBXGroup;
+			children = (
+				CF8477F8155C1CFD00B2F1CF /* facebook-ios-sdk */,
+				CF8477D1155BFC4700B2F1CF /* LeaderboardWar */,
+				CF8477CA155BFC4700B2F1CF /* Frameworks */,
+				CF8477C8155BFC4700B2F1CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8477C8155BFC4700B2F1CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF8477C7155BFC4700B2F1CF /* LeaderboardWar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF8477CA155BFC4700B2F1CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF847801155C1CFD00B2F1CF /* libfacebook_ios_sdk.a */,
+				CF8477F6155C0A1D00B2F1CF /* QuartzCore.framework */,
+				CF8477F4155C0A1400B2F1CF /* Security.framework */,
+				CF8477F2155C0A0900B2F1CF /* libz.1.1.3.dylib */,
+				CF8477F0155C09E600B2F1CF /* MobileCoreServices.framework */,
+				CF8477EE155C09CD00B2F1CF /* SystemConfiguration.framework */,
+				CF8477EC155C09C000B2F1CF /* CFNetwork.framework */,
+				CF8477EA155C09B500B2F1CF /* AudioToolbox.framework */,
+				CF8477E8155C037100B2F1CF /* Parse.framework */,
+				CF8477CB155BFC4700B2F1CF /* UIKit.framework */,
+				CF8477CD155BFC4700B2F1CF /* Foundation.framework */,
+				CF8477CF155BFC4700B2F1CF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF8477D1155BFC4700B2F1CF /* LeaderboardWar */ = {
+			isa = PBXGroup;
+			children = (
+				CF51C944155CF9C000F82AC6 /* CoreGame.h */,
+				CF51C945155CF9C000F82AC6 /* CoreGame.m */,
+				CF51C8F0155CEA6600F82AC6 /* BoardCellView.xib */,
+				CF51C918155CEC7F00F82AC6 /* BoardCellView.h */,
+				CF51C919155CEC7F00F82AC6 /* BoardCellView.m */,
+				CF84780E155C2BC900B2F1CF /* FacebookData.h */,
+				CF84780F155C2BC900B2F1CF /* FacebookData.m */,
+				CF847810155C2BC900B2F1CF /* FacebookManager.h */,
+				CF847811155C2BC900B2F1CF /* FacebookManager.m */,
+				CF8477DA155BFC4700B2F1CF /* AppDelegate.h */,
+				CF8477DB155BFC4700B2F1CF /* AppDelegate.m */,
+				CF8477DD155BFC4700B2F1CF /* ViewController.h */,
+				CF8477DE155BFC4700B2F1CF /* ViewController.m */,
+				CF847814155C328A00B2F1CF /* LeaderboardViewController.h */,
+				CF847815155C328B00B2F1CF /* LeaderboardViewController.m */,
+				CF847816155C328B00B2F1CF /* LeaderboardViewController.xib */,
+				CF8477E0155BFC4700B2F1CF /* ViewController.xib */,
+				CF8477D2155BFC4700B2F1CF /* Supporting Files */,
+			);
+			path = LeaderboardWar;
+			sourceTree = "<group>";
+		};
+		CF8477D2155BFC4700B2F1CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF8477D3155BFC4700B2F1CF /* LeaderboardWar-Info.plist */,
+				CF8477D4155BFC4700B2F1CF /* InfoPlist.strings */,
+				CF8477D7155BFC4700B2F1CF /* main.m */,
+				CF8477D9155BFC4700B2F1CF /* LeaderboardWar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF8477F8155C1CFD00B2F1CF /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				CF8477F9155C1CFD00B2F1CF /* Facebook.h */,
+				CF8477FA155C1CFD00B2F1CF /* FBConnect.h */,
+				CF8477FB155C1CFD00B2F1CF /* FBDialog.bundle */,
+				CF8477FC155C1CFD00B2F1CF /* FBDialog.h */,
+				CF8477FD155C1CFD00B2F1CF /* FBFrictionlessRequestSettings.h */,
+				CF8477FE155C1CFD00B2F1CF /* FBLoginDialog.h */,
+				CF8477FF155C1CFD00B2F1CF /* FBRequest.h */,
+				CF847800155C1CFD00B2F1CF /* JSON.h */,
+				CF847802155C1CFD00B2F1CF /* NSObject+SBJSON.h */,
+				CF847803155C1CFD00B2F1CF /* NSString+SBJSON.h */,
+				CF847804155C1CFD00B2F1CF /* SBJSON.h */,
+				CF847805155C1CFD00B2F1CF /* SBJsonBase.h */,
+				CF847806155C1CFD00B2F1CF /* SBJsonParser.h */,
+				CF847807155C1CFD00B2F1CF /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF8477C6155BFC4700B2F1CF /* LeaderboardWar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF8477E5155BFC4700B2F1CF /* Build configuration list for PBXNativeTarget "LeaderboardWar" */;
+			buildPhases = (
+				CF8477C3155BFC4700B2F1CF /* Sources */,
+				CF8477C4155BFC4700B2F1CF /* Frameworks */,
+				CF8477C5155BFC4700B2F1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeaderboardWar;
+			productName = LeaderboardWar;
+			productReference = CF8477C7155BFC4700B2F1CF /* LeaderboardWar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF8477BE155BFC4600B2F1CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CF8477C1155BFC4600B2F1CF /* Build configuration list for PBXProject "LeaderboardWar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF8477BC155BFC4600B2F1CF;
+			productRefGroup = CF8477C8155BFC4700B2F1CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF8477C6155BFC4700B2F1CF /* LeaderboardWar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF8477C5155BFC4700B2F1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8477D6155BFC4700B2F1CF /* InfoPlist.strings in Resources */,
+				CF8477E2155BFC4700B2F1CF /* ViewController.xib in Resources */,
+				CF847808155C1CFD00B2F1CF /* FBDialog.bundle in Resources */,
+				CF847818155C328B00B2F1CF /* LeaderboardViewController.xib in Resources */,
+				CF51C8F1155CEA6600F82AC6 /* BoardCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8477C3155BFC4700B2F1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8477D8155BFC4700B2F1CF /* main.m in Sources */,
+				CF8477DC155BFC4700B2F1CF /* AppDelegate.m in Sources */,
+				CF8477DF155BFC4700B2F1CF /* ViewController.m in Sources */,
+				CF847812155C2BC900B2F1CF /* FacebookData.m in Sources */,
+				CF847813155C2BC900B2F1CF /* FacebookManager.m in Sources */,
+				CF847817155C328B00B2F1CF /* LeaderboardViewController.m in Sources */,
+				CF51C91A155CEC7F00F82AC6 /* BoardCellView.m in Sources */,
+				CF51C946155CF9C000F82AC6 /* CoreGame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF8477D4155BFC4700B2F1CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8477D5155BFC4700B2F1CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF8477E0155BFC4700B2F1CF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF8477E1155BFC4700B2F1CF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF8477E3155BFC4700B2F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF8477E4155BFC4700B2F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF8477E6155BFC4700B2F1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaderboardWar/LeaderboardWar-Prefix.pch";
+				INFOPLIST_FILE = "LeaderboardWar/LeaderboardWar-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF8477E7155BFC4700B2F1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaderboardWar/LeaderboardWar-Prefix.pch";
+				INFOPLIST_FILE = "LeaderboardWar/LeaderboardWar-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF8477C1155BFC4600B2F1CF /* Build configuration list for PBXProject "LeaderboardWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8477E3155BFC4700B2F1CF /* Debug */,
+				CF8477E4155BFC4700B2F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF8477E5155BFC4700B2F1CF /* Build configuration list for PBXNativeTarget "LeaderboardWar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF8477E6155BFC4700B2F1CF /* Debug */,
+				CF8477E7155BFC4700B2F1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF8477BE155BFC4600B2F1CF /* Project object */;
+}
