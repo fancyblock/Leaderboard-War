@@ -10,6 +10,8 @@
 		CF51C8F1155CEA6600F82AC6 /* BoardCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF51C8F0155CEA6600F82AC6 /* BoardCellView.xib */; };
 		CF51C91A155CEC7F00F82AC6 /* BoardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51C919155CEC7F00F82AC6 /* BoardCellView.m */; };
 		CF51C946155CF9C000F82AC6 /* CoreGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51C945155CF9C000F82AC6 /* CoreGame.m */; };
+		CF74092715B9598F003FF3CE /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF74092515B9598F003FF3CE /* EGORefreshTableHeaderView.m */; };
+		CF74092815B9598F003FF3CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CF74092615B9598F003FF3CE /* MBProgressHUD.m */; };
 		CF8477CC155BFC4700B2F1CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CB155BFC4700B2F1CF /* UIKit.framework */; };
 		CF8477CE155BFC4700B2F1CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CD155BFC4700B2F1CF /* Foundation.framework */; };
 		CF8477D0155BFC4700B2F1CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8477CF155BFC4700B2F1CF /* CoreGraphics.framework */; };
@@ -40,6 +42,10 @@
 		CF51C919155CEC7F00F82AC6 /* BoardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardCellView.m; sourceTree = "<group>"; };
 		CF51C944155CF9C000F82AC6 /* CoreGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreGame.h; sourceTree = "<group>"; };
 		CF51C945155CF9C000F82AC6 /* CoreGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreGame.m; sourceTree = "<group>"; };
+		CF74092315B9598F003FF3CE /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		CF74092415B9598F003FF3CE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CF74092515B9598F003FF3CE /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		CF74092615B9598F003FF3CE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CF8477C7155BFC4700B2F1CF /* LeaderboardWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8477CB155BFC4700B2F1CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF8477CD155BFC4700B2F1CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,10 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF74092A15B95995003FF3CE /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CF74092315B9598F003FF3CE /* EGORefreshTableHeaderView.h */,
+				CF74092415B9598F003FF3CE /* MBProgressHUD.h */,
+				CF74092515B9598F003FF3CE /* EGORefreshTableHeaderView.m */,
+				CF74092615B9598F003FF3CE /* MBProgressHUD.m */,
+			);
+			name = Libs;
+			path = LeaderboardWar;
+			sourceTree = "<group>";
+		};
 		CF8477BC155BFC4600B2F1CF = {
 			isa = PBXGroup;
 			children = (
 				CF8477F8155C1CFD00B2F1CF /* facebook-ios-sdk */,
+				CF74092A15B95995003FF3CE /* Libs */,
 				CF8477D1155BFC4700B2F1CF /* LeaderboardWar */,
 				CF8477CA155BFC4700B2F1CF /* Frameworks */,
 				CF8477C8155BFC4700B2F1CF /* Products */,
@@ -275,6 +294,8 @@
 				CF847817155C328B00B2F1CF /* LeaderboardViewController.m in Sources */,
 				CF51C91A155CEC7F00F82AC6 /* BoardCellView.m in Sources */,
 				CF51C946155CF9C000F82AC6 /* CoreGame.m in Sources */,
+				CF74092715B9598F003FF3CE /* EGORefreshTableHeaderView.m in Sources */,
+				CF74092815B9598F003FF3CE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

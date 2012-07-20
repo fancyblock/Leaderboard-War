@@ -8,6 +8,7 @@
 
 #import "LeaderboardViewController.h"
 #import "BoardCellView.h"
+#import "MBProgressHUD.h"
 
 
 @interface LeaderboardViewController(private)
@@ -27,13 +28,11 @@
 @implementation LeaderboardViewController
 
 @synthesize txtInfo;
-@synthesize uiLoading;
 @synthesize uiProgress;
 @synthesize viewLeaderboard;
 @synthesize btnAddSelf;
 @synthesize btnAttack;
 @synthesize btnHelp;
-@synthesize btnRefresh;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -63,9 +62,19 @@
     // initial core game
     m_coreGame = [[CoreGame alloc] init];
     
+    // add the refresh view
+    m_refreshView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake( 0,
+                                                                                -self.viewLeaderboard.bounds.size.height, 
+                                                                                self.view.frame.size.width, 
+                                                                                self.viewLeaderboard.bounds.size.height )];
+    m_refreshView.delegate = self;
+    [self.viewLeaderboard addSubview:m_refreshView];
+    m_isRefreshing = NO;
+    
     m_operateMode = eAddSelfMode;
     [self setModeButton:self.btnAddSelf];
     [self loadLeaderboard];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_onPicLoaded) name:@"icon_load_complete" object:nil];
 }
@@ -102,11 +111,6 @@
 // load leaderboard
 - (void)loadLeaderboard
 {
-    self.uiLoading.hidesWhenStopped = YES;
-    [self.btnRefresh setEnabled:NO];
-    [self.uiLoading startAnimating];
-    [self.viewLeaderboard setHidden:YES];
-    
     if( [FacebookManager sharedInstance]._userInfo == nil )
     {
         [[FacebookManager sharedInstance] GetProfile:self withCallback:@selector(_onUserProfileComplete)];
@@ -139,8 +143,10 @@
 {
     m_leaderboard = [m_coreGame GetFriendsList];
     
-    [uiLoading stopAnimating];
-    [self.btnRefresh setEnabled:YES];
+    m_isRefreshing = NO;
+    [MBProgressHUD hideHUDForView:self.view animated:NO];
+    [m_refreshView egoRefreshScrollViewDataSourceDidFinishedLoading:self.viewLeaderboard];
+    
     [viewLeaderboard setHidden:NO];
     [self.viewLeaderboard reloadData];
 }
@@ -157,15 +163,26 @@
     [m_coreGame InitialScore:self withCallback:@selector(getMark)];
 }
 
+// callback after submit the operation
+- (void)_onOperateComplete
+{
+    [m_coreGame SortLocalList];
+    
+    [self.viewLeaderboard setAllowsSelection:YES];
+    [viewLeaderboard reloadData];
+    [self.viewLeaderboard deselectRowAtIndexPath:m_curSelectCell animated:YES];
+    [m_curSelectCell release];
+}
+
+// callback when pic loaded
+- (void)_onPicLoaded
+{
+    [self.viewLeaderboard reloadData];
+}
+
 
 //------------------------------- controllor events ------------------------------------- 
 
-- (IBAction)RefreshLeaderboard:(id)sender
-{
-    NSLog( @"Refresh Leaderboard" );
-    
-    [self loadLeaderboard];
-}
 
 - (IBAction)Attack:(id)sender
 {
@@ -258,8 +275,6 @@
 {
     // disable some ui for safity
     [self.viewLeaderboard setAllowsSelection:NO];
-    [self.btnRefresh setEnabled:NO];
-    [self.uiLoading startAnimating];
     
     NSInteger row = [indexPath row];
     BOOL result;
@@ -285,23 +300,32 @@
     }
 }
 
-// callback after submit the operation
-- (void)_onOperateComplete
-{
-    [m_coreGame SortLocalList];
-    
-    [self.btnRefresh setEnabled:YES];
-    [self.viewLeaderboard setAllowsSelection:YES];
-    [self.uiLoading stopAnimating];
-    [viewLeaderboard reloadData];
-    [self.viewLeaderboard deselectRowAtIndexPath:m_curSelectCell animated:YES];
-    [m_curSelectCell release];
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{	
+	[m_refreshView egoRefreshScrollViewDidScroll:scrollView];
 }
 
-// callback when pic loaded
-- (void)_onPicLoaded
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    [self.viewLeaderboard reloadData];
+	[m_refreshView egoRefreshScrollViewDidEndDragging:scrollView];
 }
+
+
+// begin to refresh
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view
+{
+    m_isRefreshing = YES;
+    
+    [self loadLeaderboard];
+}
+
+
+// if refresh done
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view
+{
+    return m_isRefreshing;
+}
+
 
 @end

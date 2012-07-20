@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FacebookManager.h"
 #import "CoreGame.h"
+#import "EGORefreshTableHeaderView.h"
 
 
 // operation mode
@@ -19,28 +20,26 @@ enum OperationMode
     eHelpMode = 2
 };
 
-@interface LeaderboardViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface LeaderboardViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, EGORefreshTableHeaderDelegate>
 {
     int m_operateMode;
     NSMutableArray* m_leaderboard;
     
     CoreGame* m_coreGame;
     NSIndexPath* m_curSelectCell;
+    
+    EGORefreshTableHeaderView* m_refreshView;
+    BOOL m_isRefreshing;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView* viewLeaderboard;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView* uiLoading;
 @property (nonatomic, retain) IBOutlet UIProgressView* uiProgress;
 @property (nonatomic, retain) IBOutlet UILabel* txtInfo;
 
-@property (nonatomic, retain) IBOutlet UIBarButtonItem* btnRefresh;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem* btnAttack;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem* btnAddSelf;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem* btnHelp;
 
-
-
-- (IBAction)RefreshLeaderboard:(id)sender;
 
 - (IBAction)Attack:(id)sender;
 
